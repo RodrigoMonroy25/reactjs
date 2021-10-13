@@ -1,0 +1,25 @@
+.appNavbar {
+    display: flex;
+    background-color: powderblue;
+    align-items: center;
+    height: 80px;
+}
+
+.navTitle {
+    text-align: center;
+    width: 50%;
+}
+
+.navUl {
+    list-style: none;
+    display: flex;
+}
+
+.navLi {
+    padding: 10px;
+}
+
+.a {
+    text-decoration: none;
+    color: black;
+}
