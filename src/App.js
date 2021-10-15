@@ -1,23 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
-import Navbar from './components/navbar/navbar.jsx'
+import Navbar from './components/navbar/navbar.jsx';
+import ItemListContainer from './components/itemListContainer/itemListContainer';
 
 function App() {
   return (
     <div className="App">
-      <Navbar /> {/* Se inserta componente Navbar */}
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1>Rodrigo Monroy</h1>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar/> {/* Se inserta componente Navbar */}
+      <ItemListContainer greeting='Prop greeting'/> {/* Se inserta componente ItemListContainer */}
     </div>
   );
 }

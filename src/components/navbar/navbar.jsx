@@ -1,10 +1,12 @@
-import './navbarStyle.css'
+import CartWidget from '../cartWidget/cartWidget';
+import './navbarStyle.css';
+
 
 const Navbar = () => {
   return (
   <nav className="appNavbar">
     <div className="navTitle container_title container">
-      <h1> Weast Bay Shoes </h1>
+      <h1> WeastBay Shoes </h1>
     </div>
     <div className="navMenu">
       <ul className="navUl container">
@@ -18,8 +20,8 @@ const Navbar = () => {
             <li className="navLi"><a className="a"  href="*">Unisex</a></li>
           </ul>
         </li>
-        <li className="navLi"><a className="a" href="*">Contacto</a></li>
-        <li className="navLi"><a className="a"  href="*">Mi carrito</a></li>
+        <li className="navLi"><a className="a" href="*"> Contacto </a></li>
+        <li className="navLi"><a className="a"  href="*"> <CartWidget/> </a></li>
       </ul>
     </div>
   </nav>
