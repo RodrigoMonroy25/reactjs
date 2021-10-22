@@ -1,5 +1,5 @@
 import React from 'react';
-import ShoppingCartImage from '../../img/shopping-cart.png';
+import ShoppingCartImage from '../img/shopping-cart.png';
 
 const CartWidget = () => {
     return (

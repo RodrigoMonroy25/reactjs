@@ -15,7 +15,7 @@ const ItemCount = (prop) => {
     return (
     <div className="d-flex justify-content-center align-middle">
         <button className="btn btn-sm btn-dark fw-bold " onClick={onAdd}> + </button> {/* Add */}
-        <p className="fs-6 fw-light">   {counter}   </p>
+        <p className="fs-6 fw-light"> {counter} </p>
         <button className="btn btn-sm btn-dark fw-bold" onClick={onRemove}> - </button> {/* Subtract */}
     </div>
     )

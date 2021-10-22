@@ -1,15 +1,16 @@
 import CartWidget from '../cartWidget/cartWidget';
 import './navbarStyle.css';
+import Logo from '../img/logo.png'
 
 
 const Navbar = () => {
   return (
-  <nav className="appNavbar">
-    <div className="navTitle container_title container">
-      <h1> WeastBay Shoes </h1>
+  <nav className="appNavbar d-flex justify-content-between">
+    <div className="navTitle container_title d-flex justify-content-start">
+      <h1> <image src={Logo} alt="Logo"/>WeastBay Shoes </h1>
     </div>
     <div className="navMenu">
-      <ul className="navUl container">
+      <ul className="navUl">
         <li className="navLi"><a className="a"  href="*">Inicio</a></li>
         <li className="navLi"><a className="a"  href="*">Calzado</a>
           <ul className="navUl d-none">
