@@ -1,18 +1,18 @@
 import CartWidget from '../cartWidget/cartWidget';
 import './navbarStyle.css';
-import Logo from '../img/logo.png'
+import Logo from '../../img/logo.png'
 
 
 const Navbar = () => {
   return (
   <nav className="appNavbar d-flex justify-content-between">
     <div className="navTitle container_title d-flex justify-content-start">
-      <h1> <image src={Logo} alt="Logo"/>WeastBay Shoes </h1>
+      <h1> <image src= {Logo} alt="Logo"/>WeastBay Shoes </h1>
     </div>
-    <div className="navMenu">
+    <div className="navMenu dropdown">
       <ul className="navUl">
-        <li className="navLi"><a className="a"  href="*">Inicio</a></li>
-        <li className="navLi"><a className="a"  href="*">Calzado</a>
+        <li className="navLi btn"><a className="a"  href="*">Inicio</a></li>
+        <li className="navLi btn"><a className="a"  href="*">Calzado</a>
           <ul className="navUl d-none">
             <li className="navLi"><a className="a"  href="*">Hombre</a></li>
             <li className="navLi"><a className="a"  href="*">Mujer</a></li>
@@ -21,8 +21,8 @@ const Navbar = () => {
             <li className="navLi"><a className="a"  href="*">Unisex</a></li>
           </ul>
         </li>
-        <li className="navLi"><a className="a" href="*"> Contacto </a></li>
-        <li className="navLi"><a className="a"  href="*"> <CartWidget/> </a></li>
+        <li className="navLi btn"><a className="a" href="*"> Contacto </a></li>
+        <li className="navLi btn"><a className="a"  href="*"> <CartWidget/> </a></li>
       </ul>
     </div>
   </nav>
