@@ -5,8 +5,7 @@ const ItemListContainer = (props) => {
 
     return (
     <div>
-        <p className="fs-1">{props.greeting}</p>
-        <ItemList/>
+        <p className="fs-2">{props.greeting}</p>
         <ItemList/>
     </div>
     )

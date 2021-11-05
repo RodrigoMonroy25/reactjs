@@ -1,28 +1,25 @@
+import { Link, NavLink } from 'react-router-dom'
 import CartWidget from '../cartWidget/cartWidget';
 import './navbarStyle.css';
-import Logo from '../../img/logo.png'
-
 
 const Navbar = () => {
   return (
   <nav className="appNavbar d-flex justify-content-between">
     <div className="navTitle container_title d-flex justify-content-start">
-      <h1> <image src= {Logo} alt="Logo"/>WeastBay Shoes </h1>
+      <Link to={`/`}><image src="https://drive.google.com/file/d/1mPncQ8Ye1AA2FHbXJVqZsI_D48QQxqC4/view?usp=sharing" alt="Logo"/></Link>
+      <Link to={`/`}><h1> WeastBay Shoes </h1></Link>
     </div>
     <div className="navMenu dropdown">
-      <ul className="navUl">
-        <li className="navLi btn"><a className="a"  href="*">Inicio</a></li>
-        <li className="navLi btn"><a className="a"  href="*">Calzado</a>
+      <ul className="navUl nav">
+        <li className="navLi nav-item btn"><a className="a nav-link"  href="*">Inicio</a></li>
+        <li className="navLi nav-item btn"><a className="a nav-link"  href="*">Calzado</a>
           <ul className="navUl d-none">
-            <li className="navLi"><a className="a"  href="*">Hombre</a></li>
-            <li className="navLi"><a className="a"  href="*">Mujer</a></li>
-            <li className="navLi"><a className="a"  href="*">Niño</a></li>
-            <li className="navLi"><a className="a"  href="*">Niña</a></li>
-            <li className="navLi"><a className="a"  href="*">Unisex</a></li>
+            <li className="navLi"><NavLink to={`/category/:categoryId`} className="a"  href="*">Hombre</NavLink></li>
+            <li className="navLi"><NavLink to={`/category/:categoryId`} className="a"  href="*">Mujer</NavLink></li>
           </ul>
         </li>
-        <li className="navLi btn"><a className="a" href="*"> Contacto </a></li>
-        <li className="navLi btn"><a className="a"  href="*"> <CartWidget/> </a></li>
+        <li className="navLi nav-item btn"><a className="a nav-link" href="*"> Contacto </a></li>
+        <li className="navLi nav-item btn"><a className="a nav-link"  href="*"> <CartWidget/> </a></li>
       </ul>
     </div>
   </nav>

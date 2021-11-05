@@ -1,14 +1,12 @@
-import ItemCount from '../itemCount/itemCount.js';
+import { Link } from 'react-router-dom';
 import ItemDetailContainer from '../itemDetailContainer/itemDetailContainer.js';
 
 const Item = () => {
     
     return (
-        <>
+        <Link to={`/item/:id`}>
             <ItemDetailContainer />
-            <ItemCount stock="5" /> {/* Se inserta contador con stock = 5 */}
-            <a href="..." className="btn btn-primary mt-1">Agregar al carrito</a>
-        </>
+        </Link>
     )
 }
 
