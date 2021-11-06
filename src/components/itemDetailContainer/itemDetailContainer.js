@@ -1,3 +1,4 @@
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { useEffect, useState } from "react"
 import Products from '../products/products.json'
 import ItemDetail from "../itemDetail/itemDetail"
@@ -32,19 +33,25 @@ const ItemDetailContainer = () => {
     }, []);
 
     return (
-        <div className="card-group">
-            {productos?.map(({id, marca, nombre, descripcion, imagen, precio}) => (
-                <ItemDetail key={id} marca={marca} nombre={nombre} descripcion={descripcion} imagen={imagen} precio={precio} />
-            ))}
-            {loading &&
-            <div className="d-flex align-items-center m-2">
-                <strong>Loading . . .</strong>
-                <div className="spinner-border spinner-border-sm text-primary" role="status">
-                    <span className="visually-hidden">Loading...</span>
-                </div>
-            </div>
-            }
-        </div>
+        <BrowserRouter>
+            <Switch>
+                <Route path = "/item/:id">
+                    <div className="card-group">
+                        {productos?.map(({id, marca, nombre, descripcion, imagen, precio}) => (
+                            <ItemDetail key={id} marca={marca} nombre={nombre} descripcion={descripcion} imagen={imagen} precio={precio} />
+                        ))}
+                        {loading &&
+                        <div className="d-flex align-items-center m-2">
+                            <strong>Loading . . .</strong>
+                            <div className="spinner-border spinner-border-sm text-primary" role="status">
+                                <span className="visually-hidden">Loading...</span>
+                            </div>
+                        </div>
+                        }
+                    </div>
+                </Route>
+            </Switch>
+        </BrowserRouter>
     );
 
 }
