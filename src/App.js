@@ -8,7 +8,7 @@ function App() {
     <BrowserRouter className="App">
       <Navbar/> {/* Se inserta componente Navbar */}
       <Routes>
-        <Route exact path="/">
+        <Route exact path="/category/:id" element={<ItemListContainer greeting='Zapatillas'/>}>
           <ItemListContainer greeting='Zapatillas'/> {/* Se inserta componente ItemListContainer */}
         </Route>
       </Routes>
