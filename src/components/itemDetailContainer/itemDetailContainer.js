@@ -1,16 +1,16 @@
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { useEffect, useState } from "react"
 import Products from '../products/products.json'
 import ItemDetail from "../itemDetail/itemDetail"
 
 const ItemDetailContainer = () => {
-    
+    //const {itemId} = useParams();
     const [productos, setProductos] = useState(null);
     const [loading, setLoading] = useState(true);
     
     useEffect (() => {
         const task = new Promise ((resolve, reject) => {
-            setTimeout(() =>{
+            setTimeout(() => {
                 resolve(Products);
                 reject("Error");
             }, 2000)
@@ -34,7 +34,7 @@ const ItemDetailContainer = () => {
 
     return (
         <BrowserRouter>
-            <Switch>
+            <Routes>
                 <Route path = "/item/:id">
                     <div className="card-group">
                         {productos?.map(({id, marca, nombre, descripcion, imagen, precio}) => (
@@ -50,7 +50,7 @@ const ItemDetailContainer = () => {
                         }
                     </div>
                 </Route>
-            </Switch>
+            </Routes>
         </BrowserRouter>
     );
 

@@ -1,13 +1,13 @@
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 
 const Cart = () => {
     <BrowserRouter>
-        <Switch>
+        <Routes>
             <Route exact path="/cart">
 
             </Route>
-        </Switch>
+        </Routes>
     </BrowserRouter>
 };
 
