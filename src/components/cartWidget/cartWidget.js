@@ -1,12 +1,13 @@
-import React from 'react';
+import React from "react";
+import Images from "../../assets/img/img";
 
 const CartWidget = () => {
-    return (
-        <div>
-            <p>Cart</p>
-            <image src="https://drive.google.com/file/d/13swZxyDmLDAzyog-S3VASDyCAOt0tu_b/view?usp=sharing" alt="Shopping cart" />
-        </div>
-    )
-}
+  return (
+    <div>
+      <p>Cart</p>
+      <image src={Images[1].img} alt="Shopping cart" />
+    </div>
+  );
+};
 
-export default CartWidget   
+export default CartWidget;

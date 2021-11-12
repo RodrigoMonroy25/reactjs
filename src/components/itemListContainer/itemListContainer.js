@@ -1,14 +1,12 @@
-//import { useEffect, useState } from "react";
-import ItemList from "../itemList/itemList.js"
+import ItemList from "../itemList/itemList.js";
 
 const ItemListContainer = (props) => {
-
-    return (
-    <div>
-        <p className="fs-2">{props.greeting}</p>
-        <ItemList/>
+  return (
+    <div className="mt-3 d-flex justify-content-center">
+      <h1>{props.greeting}</h1>
+      <ItemList />
     </div>
-    )
-}
+  );
+};
 
-export default ItemListContainer
+export default ItemListContainer;

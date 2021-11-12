@@ -1,26 +1,36 @@
 import { Link } from "react-router-dom";
 
-const Item = (prop) => {
+const Item = (product) => {
   return (
-    <Link to={`/item/:id`}>
-      <div className="card bg-light mb-3">
-        <image
-          className="card-img-top"
-          src={prop.imagen}
-          alt="Card image cap"
-        />
+    <div>
+      <div
+        className="card bg-light mb-3 mx-2"
+        style={{ maxWidth: "220px", minHeight: "300px" }}
+      >
+        <Link to={`/item/${product.id}`}>
+          <image
+            className="card-img-top img-fluid"
+            src={product.imagen}
+            alt="Card image"
+          />
+        </Link>
         <div className="card-body">
-          <h5 className="fs-4 card-title">
-            {" "}
-            {prop.marca} - {prop.nombre}{" "}
-          </h5>
-          <h5 className="fs-6 badge bg-secondary"> $ {prop.precio} </h5>
-          <a href="..." className="fs-6 btn btn-primary mt-1">
-            Agregar al carrito
-          </a>
+          <Link to={`/item/${product.id}`}>
+            <h5 className="fs-3 card-title text-center">
+              {product.marca} - {product.nombre}
+            </h5>
+          </Link>
+          <div className="d-flex justify-content-center">
+            <h5 className="fs-6 badge bg-secondary"> $ {product.precio} </h5>
+          </div>
+          <div className="d-flex justify-content-center">
+            <a href="..." className="fs-6 btn btn-primary mt-1">
+              Agregar al carrito
+            </a>
+          </div>
         </div>
       </div>
-    </Link>
+    </div>
   );
 };
 
