@@ -15,7 +15,6 @@ const ItemList = () => {
     });
     task.then(
       (result) => {
-        console.log(result);
         setProductos(result);
         setLoading(false);
       },
@@ -32,26 +31,14 @@ const ItemList = () => {
     <div className="row">
       <div className="col">
         <div className="card-group d-flex justify-content-center">
-          {productos?.map(
-            ({ id, marca, nombre, descripcion, imagen, precio }) => (
-              <Item
-                key={id}
-                id={id}
-                marca={marca}
-                nombre={nombre}
-                descripcion={descripcion}
-                imagen={imagen}
-                precio={precio}
-              />
+          {productos?.map(({ id, marca, nombre, descripcion, imagen, precio }) => (
+              <Item key={id} id={id} marca={marca} nombre={nombre} descripcion={descripcion} imagen={imagen} precio={precio}/>
             )
           )}
           {loading && (
             <div className="d-flex align-items-center m-2">
               <strong>Loading</strong>
-              <div
-                className="m-1 spinner-border spinner-border-sm text-primary"
-                role="status"
-              >
+              <div className="m-1 spinner-border spinner-border-sm text-primary" role="status">
                 <span className="visually-hidden" />
               </div>
             </div>

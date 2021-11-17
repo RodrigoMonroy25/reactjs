@@ -12,14 +12,13 @@ const ItemDetailContainer = () => {
       setTimeout(() => {
         resolve(Products);
         reject("Error");
-      }, 2000);
+      }, 500);
     });
     task.then(
       (result) => {
         itemId
           ? setProductos(result.find((productos) => productos.id === itemId))
           : setProductos(Products);
-        console.log(result);
       },
       (error) => {
         console.log(error);
@@ -45,10 +44,7 @@ const ItemDetailContainer = () => {
       ) : (
         <div className="d-flex align-items-center m-2">
           <strong>Loading</strong>
-          <div
-            className="m-1 spinner-border spinner-border-sm text-primary"
-            role="status"
-          >
+          <div className="m-1 spinner-border spinner-border-sm text-primary" role="status">
             <span className="visually-hidden" />
           </div>
         </div>
