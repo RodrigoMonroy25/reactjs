@@ -1,73 +1,89 @@
 [
     {   
         "id": "1",
-        "marca": "Nike",
-        "nombre": "Revolution 5",
-        "descripcion": "CALZADO ZAPATILLAS NIKE RUNNING REVOLUTION PARA HOMBRE DE RUNNING. Zapatillas para hombre Nike Revolution 5. Diseñadas para que puedas correr con comodidad. Material: Mesh. Estilo: Deportivo. Material del interior: Poliéster. Tipo de ajuste: Cordones",
-        "genero": "Hombre",
-        "imagen": "https://drive.google.com/file/d/1AaBb7KLyrl0qtujiU5sPixS1PRp7Z1Mx/view?usp=sharing",
-        "precio": 10.999
+        "brand": "Nike",
+        "name": "Revolution 5",
+        "description": "CALZADO ZAPATILLAS NIKE RUNNING REVOLUTION PARA HOMBRE DE RUNNING. Zapatillas para hombre Nike Revolution 5. Diseñadas para que puedas correr con comodidad. Material: Mesh. Estilo: Deportivo. Material del interior: Poliéster. Tipo de ajuste: Cordones",
+        "gender": "Hombre",
+        "image": "https://drive.google.com/file/d/1AaBb7KLyrl0qtujiU5sPixS1PRp7Z1Mx/view?usp=sharing",
+        "price": 10.999,
+        "stock": 10,
+        "totalPrice": 0
     },
     {   "id": "2",
-        "marca": "Nike",
-        "nombre": "Court Vision",
-        "descripcion": "CALZADO ZAPATILLAS NIKE SPORTWEAR SPORTWEAR PARA HOMBRE DE MODA. Zapatillas para adultos Nike Court Vision.Material: Cuero. Estilo: Urbano. Material del interior: Textil. Tipo de ajuste: Cordones",
-        "genero": "Hombre",
-        "imagen": "https://drive.google.com/file/d/12MG-JCVo6CREl6mMol4dB1LhNV52GPO8/view?usp=sharing",
-        "precio": 12.499
+        "brand": "Nike",
+        "name": "Court Vision",
+        "description": "CALZADO ZAPATILLAS NIKE SPORTWEAR SPORTWEAR PARA HOMBRE DE MODA. Zapatillas para adultos Nike Court Vision.Material: Cuero. Estilo: Urbano. Material del interior: Textil. Tipo de ajuste: Cordones",
+        "gender": "Hombre",
+        "image": "https://drive.google.com/file/d/12MG-JCVo6CREl6mMol4dB1LhNV52GPO8/view?usp=sharing",
+        "price": 12.499,
+        "stock": 7,
+        "totalPrice": 0
     },
     {
         "id": "3",
-        "marca": "Adidas",
-        "nombre": "Ultraboost 5.0 DNA",
-        "descripcion": "CALZADO ZAPATILLAS ADIDAS RUNNING ULTRABOOST PARA HOMBRE DE RUNNING. Adiós gravedad. Diseñamos estas zapatillas de running adidas Ultraboost con datos del espacio. Junto con NASA llevamos a cabo experimentos con gravedad cero para perfeccionar las mediasuelas con Boost y así lograr un mejor desempeño en la Tierra. Todo porque la innovación es nada si no pensamos en nuestro Planeta y estas zapatillas representan nuestro compromiso con ayudar a ponerle fin a la contaminación por plástico. Mediasuela Boost. Peso: 310 g (Talle AR 41). Diferencial mediasuela: 10 mm (talón: 22 mm / antepié: 12 mm). Suela Stretchweb con caucho Continental",
-        "genero": "Hombre",
-        "imagen": "https://drive.google.com/file/d/1Yn5eqr_fp4EdOHpP6y7g0hOUxamTKenL/view?usp=sharing",
-        "precio": 26.999
+        "brand": "Adidas",
+        "name": "Ultraboost 5.0 DNA",
+        "description": "CALZADO ZAPATILLAS ADIDAS RUNNING ULTRABOOST PARA HOMBRE DE RUNNING. Adiós gravedad. Diseñamos estas zapatillas de running adidas Ultraboost con datos del espacio. Junto con NASA llevamos a cabo experimentos con gravedad cero para perfeccionar las mediasuelas con Boost y así lograr un mejor desempeño en la Tierra. Todo porque la innovación es nada si no pensamos en nuestro Planeta y estas zapatillas representan nuestro compromiso con ayudar a ponerle fin a la contaminación por plástico. Mediasuela Boost. Peso: 310 g (Talle AR 41). Diferencial mediasuela: 10 mm (talón: 22 mm / antepié: 12 mm). Suela Stretchweb con caucho Continental",
+        "gender": "Hombre",
+        "image": "https://drive.google.com/file/d/1Yn5eqr_fp4EdOHpP6y7g0hOUxamTKenL/view?usp=sharing",
+        "price": 26.999,
+        "stock": 8,
+        "totalPrice": 0
     },
     {
         "id": "4",
-        "marca": "Adidas",
-        "nombre": "Supernova+",
-        "descripcion": "CALZADO ZAPATILLAS ADIDAS RUNNING SUPERNOVA PARA HOMBRE DE RUNNING. Un pie. Otro pie. Y vuelta a empezar. El proceso parece sencillo, pero no siempre lo es. Esta zapatilla de running adidas mantiene tus pies cómodos en tus primeros kilómetros y tus primeras carreras. El signo más de su nombre se debe a la inserción Boost en la mediasuela híbrida, que brinda a esta Supernova un mayor retorno de energía. La parte superior de malla técnica te proporciona sujeción y ventilación donde más la necesitas. Material: Mesh. Estilo: Deportivo. Material del interior: Poliéster. Tipo de ajuste: Cordones",
-        "genero": "Hombre",
-        "imagen": "https://drive.google.com/file/d/1cwrYnX_stLRT1ZbjP95I_hAsBHzknpEB/view?usp=sharing",
-        "precio": 18.999
+        "brand": "Adidas",
+        "name": "Supernova+",
+        "description": "CALZADO ZAPATILLAS ADIDAS RUNNING SUPERNOVA PARA HOMBRE DE RUNNING. Un pie. Otro pie. Y vuelta a empezar. El proceso parece sencillo, pero no siempre lo es. Esta zapatilla de running adidas mantiene tus pies cómodos en tus primeros kilómetros y tus primeras carreras. El signo más de su nombre se debe a la inserción Boost en la mediasuela híbrida, que brinda a esta Supernova un mayor retorno de energía. La parte superior de malla técnica te proporciona sujeción y ventilación donde más la necesitas. Material: Mesh. Estilo: Deportivo. Material del interior: Poliéster. Tipo de ajuste: Cordones",
+        "gender": "Hombre",
+        "image": "https://drive.google.com/file/d/1cwrYnX_stLRT1ZbjP95I_hAsBHzknpEB/view?usp=sharing",
+        "price": 18.999,
+        "stock": 9,
+        "totalPrice": 0
     },
     {
         "id": "5",
-        "marca": "Puma",
-        "nombre": "Electrify Nitro SP WNS",
-        "descripcion": "CALZADO ZAPATILLAS PUMA RUNNING/TRAINING/FITNESS PARA MUJER DE RUNNING. La falta de tracción y la falta de comodidad son posiblemente las dos mayores quejas de los corredores cuando se trata de zapatillas. Con estos, tampoco tienes que preocuparte. Primero, puede contar con PUMAGRIP para la tracción en todas las superficies, pase lo que pase. En segundo lugar, en lo que respecta a la comodidad, estos zapatos cuentan con NITRO FOAM combinada con ProFoam, que en conjunto brindan una increíble capacidad de respuesta y la amortiguación que necesita en cada paso. Ideal tanto para principiantes como para corredores expertos. Material: Mesh. Estilo: Deportivo. Material del interior: Poliéster. Tipo de ajuste: Cordones",
-        "genero": "Mujer",
-        "imagen": "https://drive.google.com/file/d/1nuV_qxVzx65AccjyZTmOwOU6Twtj22wb/view?usp=sharing",
-        "precio": 15.999
+        "brand": "Puma",
+        "name": "Electrify Nitro SP WNS",
+        "description": "CALZADO ZAPATILLAS PUMA RUNNING/TRAINING/FITNESS PARA MUJER DE RUNNING. La falta de tracción y la falta de comodidad son posiblemente las dos mayores quejas de los corredores cuando se trata de zapatillas. Con estos, tampoco tienes que preocuparte. Primero, puede contar con PUMAGRIP para la tracción en todas las superficies, pase lo que pase. En segundo lugar, en lo que respecta a la comodidad, estos zapatos cuentan con NITRO FOAM combinada con ProFoam, que en conjunto brindan una increíble capacidad de respuesta y la amortiguación que necesita en cada paso. Ideal tanto para principiantes como para corredores expertos. Material: Mesh. Estilo: Deportivo. Material del interior: Poliéster. Tipo de ajuste: Cordones",
+        "gender": "Mujer",
+        "image": "https://drive.google.com/file/d/1nuV_qxVzx65AccjyZTmOwOU6Twtj22wb/view?usp=sharing",
+        "price": 15.999,
+        "stock": 15,
+        "totalPrice": 0
     },
     {
         "id": "6",
-        "marca": "Puma",
-        "nombre": "Flyer Runner Enginner",
-        "descripcion": "CALZADO ZAPATILLAS PUMA RUNNING/TRAINING/FITNESS PARA MUJER DE RUNNING. Zapatillas para mujer Puma Flyer Runner Enginner. Material: Mesh. Estilo: Deportivo. Material del interior: Poliéster. Tipo de ajuste: Cordones",
-        "genero": "Mujer",
-        "imagen": "https://drive.google.com/file/d/1jFgzm8iFYhK919QxKQsjTAMLre0TDHnd/view?usp=sharing",
-        "precio": 7.749
+        "brand": "Puma",
+        "name": "Flyer Runner Enginner",
+        "description": "CALZADO ZAPATILLAS PUMA RUNNING/TRAINING/FITNESS PARA MUJER DE RUNNING. Zapatillas para mujer Puma Flyer Runner Enginner. Material: Mesh. Estilo: Deportivo. Material del interior: Poliéster. Tipo de ajuste: Cordones",
+        "gender": "Mujer",
+        "image": "https://drive.google.com/file/d/1jFgzm8iFYhK919QxKQsjTAMLre0TDHnd/view?usp=sharing",
+        "price": 7.749,
+        "stock": 19,
+        "totalPrice": 0
     },
     {
         "id": "7",
-        "marca": "Asics",
-        "nombre": "Gel-Nimbus 22",
-        "descripcion": "CALZADO ZAPATILLAS ASICS CAL LEGEND PARA MUJER DE RUNNING. Disfruta de la máxima comodidad con las zapatillas de running GEL-NIMBUS™ 22 de ASICS. Esta zapatilla de running, dotada de tecnologías que mejoran el rendimiento de los corredores neutras, ofrece una mullida amortiguación y una gran capacidad de respuesta, y cuenta con un suave sistema de amortiguación GEL™ en el talón que proporciona una excelente absorción del impacto. La tecnología GEL™ mejorada en la parte delantera reduce la carga en los pies, mientras que la tecnología FLYTEFOAM™ Propel en la entresuela proporciona un paso más energético. La pieza termoplástica de tecnología TRUSSTIC™ bajo el arco de la zapatilla proporciona estabilidad, reduce el peso y contribuye a prolongar la vida útil de la zapatilla. El empeine de malla ligera de alto rendimiento aporta una mayor transpirabilidad en los pies y garantiza un ajuste perfecto y seguro. La zapatilla GEL-NIMBUS™ 22 está concebida específicamente para corredoras de alto nivel y cuenta con una mayor capa de gomaespuma en la entresuela que minimiza los impactos más duros. Además, la suela AHAR™, que destaca por su ligereza, previene el desgaste de la zapatilla y te permite centrarte en los entrenamientos. Tanto si eres un profesional experimentad como si estás empezando, la zapatilla de running de alto rendimiento GEL-NIMBUS™ 22 está diseñada para ofrecer una amortiguación suave y una zancada con mayor capacidad de reacción. Origen: VIETNAM. Material: Mesh. Estilo: Deportivo. Material del interior: Poliéster. Tipo de ajuste: Cordones",
-        "genero": "Mujer",
-        "imagen": "https://drive.google.com/file/d/1muoRAJu9JsOTcuBaMWpxFkhn224qm2rz/view?usp=sharing",
-        "precio": 25.999
+        "brand": "Asics",
+        "name": "Gel-Nimbus 22",
+        "description": "CALZADO ZAPATILLAS ASICS CAL LEGEND PARA MUJER DE RUNNING. Disfruta de la máxima comodidad con las zapatillas de running GEL-NIMBUS™ 22 de ASICS. Esta zapatilla de running, dotada de tecnologías que mejoran el rendimiento de los corredores neutras, ofrece una mullida amortiguación y una gran capacidad de respuesta, y cuenta con un suave sistema de amortiguación GEL™ en el talón que proporciona una excelente absorción del impacto. La tecnología GEL™ mejorada en la parte delantera reduce la carga en los pies, mientras que la tecnología FLYTEFOAM™ Propel en la entresuela proporciona un paso más energético. La pieza termoplástica de tecnología TRUSSTIC™ bajo el arco de la zapatilla proporciona estabilidad, reduce el peso y contribuye a prolongar la vida útil de la zapatilla. El empeine de malla ligera de alto rendimiento aporta una mayor transpirabilidad en los pies y garantiza un ajuste perfecto y seguro. La zapatilla GEL-NIMBUS™ 22 está concebida específicamente para corredoras de alto nivel y cuenta con una mayor capa de gomaespuma en la entresuela que minimiza los impactos más duros. Además, la suela AHAR™, que destaca por su ligereza, previene el desgaste de la zapatilla y te permite centrarte en los entrenamientos. Tanto si eres un profesional experimentad como si estás empezando, la zapatilla de running de alto rendimiento GEL-NIMBUS™ 22 está diseñada para ofrecer una amortiguación suave y una zancada con mayor capacidad de reacción. Origen: VIETNAM. Material: Mesh. Estilo: Deportivo. Material del interior: Poliéster. Tipo de ajuste: Cordones",
+        "gender": "Mujer",
+        "image": "https://drive.google.com/file/d/1muoRAJu9JsOTcuBaMWpxFkhn224qm2rz/view?usp=sharing",
+        "price": 25.999,
+        "stock": 3,
+        "totalPrice": 0
     },
     {
         "id": "8",
-        "marca": "Asics",
-        "nombre": "Novablast Tokyo Sunrise",
-        "descripcion": "CALZADO ZAPATILLAS ASICS CAL PARA MUJER DE RUNNING. Las zapatillas NOVABLAST™ Tokyo son ideales para corredores neutros que busquen un calzado de running con gran capacidad de reacción. Este diseño ligero incluye nuestra entresuela de espuma explosiva FLYTEFOAM™ para un rebote enérgico a cada zancada. Esta versión cuenta con nuestra gama de colores SUNRISE RED™ para celebrar la ciudad de Tokio y el país de Japón. La parte superior de malla suave y ligera de las zapatillas permite un excelente flujo de aire y que tus pies se mantengan frescos durante la carrera. La suela de las zapatillas NOVABLAST™ ha sido diseñada para acentuar la sensación de energía de la tecnología FLYTEFOAM™ Blast, que crea un efecto trampolín que te impulsa hacia adelante. Las zapatillas NOVABLAST™ son más altas que la mayoría de los modelos de running, de modo que ayudan a promover una mayor comodidad en distancias más largas. Origen: ASIA. Material: Mesh. Estilo: Deportivo. Material del interior: Poliéster. Tipo de ajuste: Cordones",
-        "genero": "Mujer",
-        "imagen": "https://drive.google.com/file/d/1lBtjqmJGnQHyC03ZbfWLKwiZ0N1SI4Tq/view?usp=sharing",
-        "precio": 21.989
+        "brand": "Asics",
+        "name": "Novablast Tokyo Sunrise",
+        "description": "CALZADO ZAPATILLAS ASICS CAL PARA MUJER DE RUNNING. Las zapatillas NOVABLAST™ Tokyo son ideales para corredores neutros que busquen un calzado de running con gran capacidad de reacción. Este diseño ligero incluye nuestra entresuela de espuma explosiva FLYTEFOAM™ para un rebote enérgico a cada zancada. Esta versión cuenta con nuestra gama de colores SUNRISE RED™ para celebrar la ciudad de Tokio y el país de Japón. La parte superior de malla suave y ligera de las zapatillas permite un excelente flujo de aire y que tus pies se mantengan frescos durante la carrera. La suela de las zapatillas NOVABLAST™ ha sido diseñada para acentuar la sensación de energía de la tecnología FLYTEFOAM™ Blast, que crea un efecto trampolín que te impulsa hacia adelante. Las zapatillas NOVABLAST™ son más altas que la mayoría de los modelos de running, de modo que ayudan a promover una mayor comodidad en distancias más largas. Origen: ASIA. Material: Mesh. Estilo: Deportivo. Material del interior: Poliéster. Tipo de ajuste: Cordones",
+        "gender": "Mujer",
+        "image": "https://drive.google.com/file/d/1lBtjqmJGnQHyC03ZbfWLKwiZ0N1SI4Tq/view?usp=sharing",
+        "price": 21.989,
+        "stock": 7,
+        "totalPrice": 0
     }
 ]

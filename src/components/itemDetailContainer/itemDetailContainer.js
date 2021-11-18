@@ -35,11 +35,12 @@ const ItemDetailContainer = () => {
         <ItemDetail
           key={productos.id}
           id={productos.id}
-          marca={productos.marca}
-          nombre={productos.nombre}
-          descripcion={productos.descripcion}
-          imagen={productos.imagen}
-          precio={productos.precio}
+          brand={productos.brand}
+          name={productos.name}
+          description={productos.description}
+          image={productos.image}
+          price={productos.price}
+          stock={productos.stock}
         />
       ) : (
         <div className="d-flex align-items-center m-2">

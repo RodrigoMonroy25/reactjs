@@ -31,8 +31,8 @@ const ItemList = () => {
     <div className="row">
       <div className="col">
         <div className="card-group d-flex justify-content-center">
-          {productos?.map(({ id, marca, nombre, descripcion, imagen, precio }) => (
-              <Item key={id} id={id} marca={marca} nombre={nombre} descripcion={descripcion} imagen={imagen} precio={precio}/>
+          {productos?.map(({ id, brand, name, description, image, price }) => (
+              <Item key={id} id={id} brand={brand} name={name} description={description} image={image} price={price}/>
             )
           )}
           {loading && (

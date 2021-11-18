@@ -15,6 +15,7 @@ const CartContextProvider = ({children}) => {
         return false;
       }
     }
+    console.log(cart);
     const removeItem = (id) => {
       const remove = cart.filter (i => i.id !== id);
       setCart(remove);
