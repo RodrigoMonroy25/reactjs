@@ -8,6 +8,7 @@
         "image": "https://drive.google.com/file/d/1AaBb7KLyrl0qtujiU5sPixS1PRp7Z1Mx/view?usp=sharing",
         "price": 10.999,
         "stock": 10,
+        "quantity": 0,
         "totalPrice": 0
     },
     {   "id": "2",
@@ -18,6 +19,7 @@
         "image": "https://drive.google.com/file/d/12MG-JCVo6CREl6mMol4dB1LhNV52GPO8/view?usp=sharing",
         "price": 12.499,
         "stock": 7,
+        "quantity": 0,
         "totalPrice": 0
     },
     {
@@ -29,6 +31,7 @@
         "image": "https://drive.google.com/file/d/1Yn5eqr_fp4EdOHpP6y7g0hOUxamTKenL/view?usp=sharing",
         "price": 26.999,
         "stock": 8,
+        "quantity": 0,
         "totalPrice": 0
     },
     {
@@ -40,6 +43,7 @@
         "image": "https://drive.google.com/file/d/1cwrYnX_stLRT1ZbjP95I_hAsBHzknpEB/view?usp=sharing",
         "price": 18.999,
         "stock": 9,
+        "quantity": 0,
         "totalPrice": 0
     },
     {
@@ -51,6 +55,7 @@
         "image": "https://drive.google.com/file/d/1nuV_qxVzx65AccjyZTmOwOU6Twtj22wb/view?usp=sharing",
         "price": 15.999,
         "stock": 15,
+        "quantity": 0,
         "totalPrice": 0
     },
     {
@@ -62,6 +67,7 @@
         "image": "https://drive.google.com/file/d/1jFgzm8iFYhK919QxKQsjTAMLre0TDHnd/view?usp=sharing",
         "price": 7.749,
         "stock": 19,
+        "quantity": 0,
         "totalPrice": 0
     },
     {
@@ -73,6 +79,7 @@
         "image": "https://drive.google.com/file/d/1muoRAJu9JsOTcuBaMWpxFkhn224qm2rz/view?usp=sharing",
         "price": 25.999,
         "stock": 3,
+        "quantity": 0,
         "totalPrice": 0
     },
     {
@@ -84,6 +91,7 @@
         "image": "https://drive.google.com/file/d/1lBtjqmJGnQHyC03ZbfWLKwiZ0N1SI4Tq/view?usp=sharing",
         "price": 21.989,
         "stock": 7,
+        "quantity": 0,
         "totalPrice": 0
     }
 ]

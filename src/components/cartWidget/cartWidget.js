@@ -4,8 +4,7 @@ import Images from "../../assets/img/img.js";
 const CartWidget = () => {
   return (
     <div>
-      <p>Cart</p>
-      <image src={Images[1].img} alt="Shopping cart" />
+      <img src={Images[1].img} alt="Shopping cart" className="img-fluid " style={{ maxWidth: "35px", minHeight: "30px" }}/>
     </div>
   );
 };

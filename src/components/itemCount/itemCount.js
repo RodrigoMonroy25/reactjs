@@ -2,43 +2,43 @@ import { useState } from 'react'
 import { Link } from "react-router-dom"
 
 
-const ItemCount = (item, onAdd) => {
-    const [counter, setCounter] = useState (0);
+const ItemCount = ({ counter, onAdd, onDiscount, brand, name, addToCart }) => {
     const [cartButton, setCartButton] = useState(true)
-    const addToCart = () => {
-        setCartButton(false)
-    }
-    const add = () => {
-        if (counter < item.stock) {
-            setCounter(counter + 1);
-        }
-    }
-    const discount = () => {
-        if (counter > 0){
-            setCounter(counter - 1)
-        }
-    }
 
     return (
         <div>
-            <div className="d-flex justify-content-center align-items-start">
-                <button className="btn btn-sm btn-secondary fw-bold mx-2" onClick={discount}> - </button> {/* Subtract */}
-                <p className="fs-5 fw-bold"> { counter } </p>
-                <button className="btn btn-sm btn-secondary fw-bold mx-2" onClick={add}> + </button> {/* Add */}
-            </div>
+            {cartButton &&
+                <div className="d-flex justify-content-center align-items-start">
+                    <button className="btn btn-sm btn-secondary fw-bold mx-2" onClick={onDiscount}> - </button> {/* Subtract */}
+                    <p className="fs-5 fw-bold"> { counter } </p>
+                    <button className="btn btn-sm btn-secondary fw-bold mx-2" onClick={onAdd}> + </button> {/* Add */}
+                </div>
+            }
             <div>
-            {cartButton ?
-                    <div className="d-flex justify-content-center">
-                        <p className="fs-6 btn btn-primary mt-1" onClick={addToCart}>
-                            Agregar al carrito
-                        </p>
-                    </div>
-                :   
-                    <div className="d-flex justify-content-center align-items-center flex-column">
-                        <p className="text-secondary fw-bold">Se agrego el producto "{item.brand} {item.name}" correctamente!</p>
-                        <Link to={`/cart`} className="fs-6 btn btn-primary mt-1">Ver carrito</Link>   
-                    </div>
+            {!counter ? 
+                <div className="d-flex justify-content-center">
+                    <p className="text-primary fw-bold">Ingrese cantidad</p>
+                </div>
+                :
+                <>
+                    {!cartButton ?
+                        <div className="d-flex justify-content-center align-items-center flex-column">
+                            <p className="text-secondary fw-bold">Se agrego el producto "{brand} {name}" correctamente!</p>
+                            <Link to={`/cart`} className="fs-6 btn btn-primary mt-1">Ver carrito</Link>
+                        </div>
+                        :
+                        <div className="d-flex justify-content-center">
+                            <p className="fs-6 btn btn-primary mt-1" onClick={() => {
+                                setCartButton(false);
+                                console.log(`Se agregaron ${counter} unidades al carrito`);
+                            }}>
+                                Agregar al carrito
+                            </p>
+                        </div>
                 }
+                </>
+            }
+
             </div>
         </div>
     )

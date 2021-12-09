@@ -1,13 +1,16 @@
+import Logo from "./logo.png"
+import ShoppingCart from "./shopping-cart.png"
+
 const Images = [
   {
     id: "1",
     name: "Logo Image",
-    img: "./logo.png",
+    img: Logo,
   },
   {
     id: "2",
     name: "Shopping Cart Image",
-    img: "./shopping-cart.png",
+    img: ShoppingCart,
   },
 ];
 

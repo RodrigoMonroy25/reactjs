@@ -1,18 +1,32 @@
 import { useState } from "react";
-import { useCart } from "../../context/cartContext"
 import ItemCount from "../itemCount/itemCount"
+import { UseCart } from "../../context/cartContext";
 
 const ItemDetail = (item) => {
-    const {addedItem} = useCart();
-    const [quantityToAdd, SetQuantityToAdd] = useState(null);
-    const onAdd = (quantityToAdd) => {
+    
+    const {addedItem} = UseCart();
+    const [quantityToAdd, setQuantityToAdd] = useState(null);
+    const addToCart = () => {
         if (quantityToAdd >= 1) {
-            SetQuantityToAdd(quantityToAdd);
+            setQuantityToAdd(quantityToAdd);
+            console.log(quantityToAdd)
+            console.log(item);
             item.quantity = quantityToAdd;
             addedItem(item);
             item.stock = item.stock - quantityToAdd;
             item.totalPrice = item.price * item.quantity;
-            console.log(item);
+        }
+    }
+
+    const [counter, setCounter] = useState (0);
+    const add = () => {
+        if (counter < item.stock) {
+            setCounter(counter + 1);
+        }
+    }
+    const discount = () => {
+        if (counter > 0){
+            setCounter(counter - 1)
         }
     }
 
@@ -25,7 +39,7 @@ const ItemDetail = (item) => {
                 <h5 className="fs-6 card-text badge bg-secondary"> $ {item.price} </h5>
             </div>
             <p className="card-text"> {item.description} </p>
-            <ItemCount onAdd={onAdd} brand={item.brand} name={item.name} stock={item.stock} />
+            <ItemCount addToCart={addToCart} onAdd={add} onDiscount={discount} counter={counter} brand={item.brand} name={item.name} stock={item.stock} />
         </div>
     </div>
     )

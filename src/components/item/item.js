@@ -4,10 +4,7 @@ const Item = (product) => {
 
   return (
     <div>
-      <div
-        className="card bg-light mb-3 mx-2"
-        style={{ maxWidth: "220px", minHeight: "300px" }}
-      >
+      <div className="card bg-light mb-3 mx-2" style={{ maxWidth: "220px", minHeight: "300px" }}>
         <Link to={`/item/${product.id}`}>
           <image className="card-img-top img-fluid" src={product.image} alt="Card image"/>
         </Link>

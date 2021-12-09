@@ -9,7 +9,7 @@ import CartContextProvider from "./context/cartContext";
 function App() {
   return (
     <BrowserRouter className="App">
-      <Navbar img="https://drive.google.com/file/d/1mPncQ8Ye1AA2FHbXJVqZsI_D48QQxqC4/view?usp=sharing"/>
+      <Navbar/>
       <CartContextProvider>
         <Switch>
           <Route exact path="/"> <ItemListContainer/> </Route>
